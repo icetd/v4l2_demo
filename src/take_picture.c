@@ -68,7 +68,7 @@ int main(int argc, char **argv)
 	/*3. set the capture format*/
 	struct v4l2_format format;
 
-	format.type					= V4L2_BUF_TYPE_VIDEO_CAPTURE;
+	format.type			= V4L2_BUF_TYPE_VIDEO_CAPTURE;
 	format.fmt.pix.width		= CAPTURE_WIDTH;
 	format.fmt.pix.height		= CAPTURE_HEIGTH;
 	format.fmt.pix.pixelformat	= V4L2_PIX_FMT_MJPEG; 
