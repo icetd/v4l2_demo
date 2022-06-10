@@ -80,7 +80,7 @@ int main(int argc, char **argv)
 
 	/*4. applay for kernel space*/
 	struct v4l2_requestbuffers reqbuffer;
-	reqbuffer.type		= V4L2_BUF_TYPE_VIDEO_CAPTURE;
+	reqbuffer.type				= V4L2_BUF_TYPE_VIDEO_CAPTURE;
 	reqbuffer.count		= 4;
 	reqbuffer.memory	= V4L2_MEMORY_MMAP; //映射方法
 	ret = ioctl(fd, VIDIOC_REQBUFS, &reqbuffer);
